@@ -25,3 +25,59 @@ Migrating to CreateTweeets (20181230145258)
   ↳ bin/rails:9
   [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-12-30 17:00:07 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ivan-devops/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ivan-devops/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ivan-devops/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb (6.2ms)
+Completed 200 OK in 37ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-30 17:02:15 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ivan-devops/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 2031ms (Views: 1976.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/tweeets/new" for 127.0.0.1 at 2018-12-30 17:02:20 +0200
+Processing by TweeetsController#new as HTML
+  Rendering tweeets/new.html.erb within layouts/application
+  Rendered tweeets/_form.html.erb (114.6ms)
+  Rendered tweeets/new.html.erb within layouts/application (117.4ms)
+Completed 200 OK in 190ms (Views: 171.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2018-12-30 17:02:24 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 121ms (Views: 117.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2018-12-30 22:35:41 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ivan-devops/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 8893ms (Views: 8868.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/tweeets/new" for 127.0.0.1 at 2018-12-30 22:35:56 +0200
+Processing by TweeetsController#new as HTML
+  Rendering tweeets/new.html.erb within layouts/application
+  Rendered tweeets/_form.html.erb (20.5ms)
+  Rendered tweeets/new.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 105ms (Views: 90.6ms | ActiveRecord: 1.1ms)
+
+
