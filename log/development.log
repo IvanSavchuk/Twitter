@@ -1558,3 +1558,257 @@ Processing by TweeetsController#index as HTML
 Completed 200 OK in 99ms (Views: 95.7ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 15:05:03 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ivan-devops/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (0.8ms)
+  Rendered tweeets/_form.html.erb (167.5ms)
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (258.4ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.2ms)
+  Rendered tweeets/index.html.erb within layouts/application (268.9ms)
+Completed 200 OK in 1061ms (Views: 1024.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 15:05:09 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (0.6ms)
+  Rendered tweeets/_form.html.erb (17.0ms)
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (22.9ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.5ms)
+  Rendered tweeets/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 94ms (Views: 85.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/tweeets" for 127.0.0.1 at 2019-02-28 15:05:33 +0200
+Processing by TweeetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"drkznk5MC/lz6bfuoHDcu/okt4MvyjpO+v3/WC9LVvRUWT1Fy7MOC1hzC6VHnFh57n7rGkvq549WxOK5HaxSRA==", "tweeet"=>{"tweeet"=>"lol"}, "commit"=>"Create Tweeet"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:31
+  [1m[36mTweeet Create (2.0ms)[0m  [1m[32mINSERT INTO "tweeets" ("tweeet", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["tweeet", "lol"], ["created_at", "2019-02-28 13:05:33.529497"], ["updated_at", "2019-02-28 13:05:33.529497"]]
+  ↳ app/controllers/tweeets_controller.rb:31
+  [1m[35m (79.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:31
+Redirected to http://localhost:3000/tweeets/5
+Completed 302 Found in 95ms (ActiveRecord: 81.2ms)
+
+
+Started GET "/tweeets/5" for 127.0.0.1 at 2019-02-28 15:05:33 +0200
+Processing by TweeetsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mTweeet Load (6.6ms)[0m  [1m[34mSELECT  "tweeets".* FROM "tweeets" WHERE "tweeets"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tweeets_controller.rb:68
+  Rendering tweeets/show.html.erb within layouts/application
+  Rendered tweeets/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 77ms (Views: 55.6ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 15:05:36 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (0.7ms)
+  Rendered tweeets/_form.html.erb (20.4ms)
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (28.8ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.9ms)
+  Rendered tweeets/index.html.erb within layouts/application (39.8ms)
+Completed 200 OK in 113ms (Views: 109.7ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/tweeets/5" for 127.0.0.1 at 2019-02-28 15:05:44 +0200
+Processing by TweeetsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"I9aMKwGMf5bLV9q9JW9BDojmimi+IT+ByEo074p3dGMBNoLwhHN6ZODNZvbCg8XMnLzW8doB4kBkcykOuJBw0w==", "id"=>"5"}
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT  "tweeets".* FROM "tweeets" WHERE "tweeets"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tweeets_controller.rb:68
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:58
+  [1m[36mTweeet Destroy (0.6ms)[0m  [1m[31mDELETE FROM "tweeets" WHERE "tweeets"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/tweeets_controller.rb:58
+  [1m[35m (91.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:58
+Redirected to http://localhost:3000/tweeets
+Completed 302 Found in 104ms (ActiveRecord: 92.7ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 15:05:44 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (0.7ms)
+  Rendered tweeets/_form.html.erb (15.1ms)
+  [1m[36mTweeet Load (0.6ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (21.3ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.8ms)
+  Rendered tweeets/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 88ms (Views: 84.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 15:09:10 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (0.7ms)
+  Rendered tweeets/_form.html.erb (14.6ms)
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (21.4ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.6ms)
+  Rendered tweeets/index.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 109ms (Views: 87.8ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/tweeets" for 127.0.0.1 at 2019-02-28 15:09:29 +0200
+Processing by TweeetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+htZeeSA1cBNHE236TUluXl1zXBd00y/5Ml6JY5cCD7Y+1eiYX/QMmaG8fwO2aF7bS+R6TnzkX5I8GfEvLsMjg==", "tweeet"=>{"tweeet"=>"w1"}, "commit"=>"Create Tweeet"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:31
+  [1m[36mTweeet Create (0.6ms)[0m  [1m[32mINSERT INTO "tweeets" ("tweeet", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["tweeet", "w1"], ["created_at", "2019-02-28 13:09:29.464337"], ["updated_at", "2019-02-28 13:09:29.464337"]]
+  ↳ app/controllers/tweeets_controller.rb:31
+  [1m[35m (101.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:31
+Redirected to http://localhost:3000/
+Completed 302 Found in 116ms (ActiveRecord: 102.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 15:09:29 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (0.9ms)
+  Rendered tweeets/_form.html.erb (10.2ms)
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (16.4ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.9ms)
+  Rendered tweeets/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 112ms (Views: 108.6ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/tweeets/6" for 127.0.0.1 at 2019-02-28 15:09:37 +0200
+Processing by TweeetsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nynthEeZn8C/B430i5wqjzGq1XxUuVOAesYxrB47pue9yeNfwmaaMpSdMb9scK5NJfCJ5TCZjkHW/yxNLNyiVw==", "id"=>"6"}
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT  "tweeets".* FROM "tweeets" WHERE "tweeets"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/tweeets_controller.rb:68
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:58
+  [1m[36mTweeet Destroy (1.0ms)[0m  [1m[31mDELETE FROM "tweeets" WHERE "tweeets"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/tweeets_controller.rb:58
+  [1m[35m (78.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:58
+Redirected to http://localhost:3000/tweeets
+Completed 302 Found in 100ms (ActiveRecord: 80.1ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 15:09:37 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (0.8ms)
+  Rendered tweeets/_form.html.erb (12.6ms)
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (22.8ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.1ms)
+  Rendered tweeets/index.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 95ms (Views: 90.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 15:15:58 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (1.4ms)
+  Rendered tweeets/_form.html.erb (18.7ms)
+  [1m[36mTweeet Load (0.6ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (35.0ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.9ms)
+  Rendered tweeets/index.html.erb within layouts/application (45.3ms)
+Completed 200 OK in 110ms (Views: 104.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 15:16:00 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (0.8ms)
+  Rendered tweeets/_form.html.erb (15.2ms)
+  [1m[36mTweeet Load (0.7ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (22.0ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.9ms)
+  Rendered tweeets/index.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 97ms (Views: 93.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 15:16:51 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (3.9ms)
+  Rendered tweeets/_form.html.erb (22.1ms)
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (30.0ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.0ms)
+  Rendered tweeets/index.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 115ms (Views: 112.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-28 15:17:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_up"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateUsers (20190228131911)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190228131911_devise_create_users.rb:5
+  [1m[35m (28.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190228131911_devise_create_users.rb:5
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20190228131911_devise_create_users.rb:39
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/migrate/20190228131911_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190228131911"]]
+  ↳ bin/rails:9
+  [1m[35m (94.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
