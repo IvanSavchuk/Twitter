@@ -799,3 +799,762 @@ Processing by TweeetsController#index as HTML
 Completed 200 OK in 624ms (Views: 603.8ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 11:10:28 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ivan-devops/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 466ms (Views: 445.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/tweeets/new" for 127.0.0.1 at 2019-02-28 11:10:36 +0200
+Processing by TweeetsController#new as HTML
+  Rendering tweeets/new.html.erb within layouts/application
+  Rendered tweeets/_form.html.erb (31.8ms)
+  Rendered tweeets/new.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 112ms (Views: 88.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 11:10:40 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (1.0ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 91ms (Views: 88.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tweeets/new" for 127.0.0.1 at 2019-02-28 11:10:42 +0200
+Processing by TweeetsController#new as HTML
+  Rendering tweeets/new.html.erb within layouts/application
+  Rendered tweeets/_form.html.erb (7.1ms)
+  Rendered tweeets/new.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 101ms (Views: 95.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 11:10:43 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 149ms (Views: 145.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 11:14:13 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 71ms (Views: 68.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 11:16:45 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 5469ms (Views: 5466.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 11:24:01 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ivan-devops/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 5834ms (Views: 5807.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 11:48:48 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (1.2ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (5.7ms)
+  Rendered tweeets/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 110ms (Views: 98.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/tweeets/new" for 127.0.0.1 at 2019-02-28 11:49:12 +0200
+Processing by TweeetsController#new as HTML
+  Rendering tweeets/new.html.erb within layouts/application
+  Rendered tweeets/_form.html.erb (20.8ms)
+  Rendered tweeets/new.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 132ms (Views: 110.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/tweeets" for 127.0.0.1 at 2019-02-28 11:49:19 +0200
+Processing by TweeetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FTGSzuhMfR8lVaZLkXHfXQ5hjSKeVJUx5t+F+Ysk0wIO+Ax3SXCsrQWhnhbxL5DpJy270AcDZ14C2KMRxFUvUQ==", "tweeet"=>{"tweeet"=>"text"}, "commit"=>"Create Tweeet"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:30
+  [1m[36mTweeet Create (0.8ms)[0m  [1m[32mINSERT INTO "tweeets" ("tweeet", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["tweeet", "text"], ["created_at", "2019-02-28 09:49:19.213085"], ["updated_at", "2019-02-28 09:49:19.213085"]]
+  ↳ app/controllers/tweeets_controller.rb:30
+  [1m[35m (66.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:30
+Redirected to http://localhost:3000/tweeets/3
+Completed 302 Found in 79ms (ActiveRecord: 67.5ms)
+
+
+Started GET "/tweeets/3" for 127.0.0.1 at 2019-02-28 11:49:19 +0200
+Processing by TweeetsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT  "tweeets".* FROM "tweeets" WHERE "tweeets"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tweeets_controller.rb:67
+  Rendering tweeets/show.html.erb within layouts/application
+  Rendered tweeets/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 69ms (Views: 60.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 11:49:21 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (2.7ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (5.1ms)
+  Rendered tweeets/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 71ms (Views: 66.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 11:50:37 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (8.1ms)
+  Rendered tweeets/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 71ms (Views: 68.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tweeets/new" for 127.0.0.1 at 2019-02-28 11:50:51 +0200
+Processing by TweeetsController#new as HTML
+  Rendering tweeets/new.html.erb within layouts/application
+  Rendered tweeets/_form.html.erb (5.0ms)
+  Rendered tweeets/new.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 97ms (Views: 93.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tweeets" for 127.0.0.1 at 2019-02-28 11:51:00 +0200
+Processing by TweeetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zcf+bw9IZiI9UTq19xVoIzIl7P6NHbQaTNe20nX+5KR+DmDWrnS3kB2lAuiXSyeXG2naDBRKRnWo0JA6Oo8Y9w==", "tweeet"=>{"tweeet"=>"test 1"}, "commit"=>"Create Tweeet"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:30
+  [1m[36mTweeet Create (0.7ms)[0m  [1m[32mINSERT INTO "tweeets" ("tweeet", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["tweeet", "test 1"], ["created_at", "2019-02-28 09:51:00.747473"], ["updated_at", "2019-02-28 09:51:00.747473"]]
+  ↳ app/controllers/tweeets_controller.rb:30
+  [1m[35m (114.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:30
+Redirected to http://localhost:3000/tweeets/4
+Completed 302 Found in 129ms (ActiveRecord: 115.8ms)
+
+
+Started GET "/tweeets/4" for 127.0.0.1 at 2019-02-28 11:51:00 +0200
+Processing by TweeetsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT  "tweeets".* FROM "tweeets" WHERE "tweeets"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tweeets_controller.rb:67
+  Rendering tweeets/show.html.erb within layouts/application
+  Rendered tweeets/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 69ms (Views: 63.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 11:51:03 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.8ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (4.4ms)
+  Rendered tweeets/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 78ms (Views: 73.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 11:51:30 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (5.8ms)
+  Rendered tweeets/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 76ms (Views: 73.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tweeets/1" for 127.0.0.1 at 2019-02-28 11:51:49 +0200
+Processing by TweeetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTweeet Load (0.6ms)[0m  [1m[34mSELECT  "tweeets".* FROM "tweeets" WHERE "tweeets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tweeets_controller.rb:67
+Completed 404 Not Found in 9ms (ActiveRecord: 0.6ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Tweeet with 'id'=1:
+  app/controllers/tweeets_controller.rb:67:in `set_tweeet'
+
+Started POST "/__better_errors/625dd34cab1641c6/variables" for 127.0.0.1 at 2019-02-28 11:51:50 +0200
+Started GET "/tweeets/2" for 127.0.0.1 at 2019-02-28 11:51:56 +0200
+Processing by TweeetsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT  "tweeets".* FROM "tweeets" WHERE "tweeets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tweeets_controller.rb:67
+Completed 404 Not Found in 8ms (ActiveRecord: 0.4ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Tweeet with 'id'=2:
+  app/controllers/tweeets_controller.rb:67:in `set_tweeet'
+
+Started POST "/__better_errors/a28f7ddf11a56667/variables" for 127.0.0.1 at 2019-02-28 11:51:57 +0200
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 11:52:01 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (7.8ms)
+  Rendered tweeets/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 93ms (Views: 89.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 11:52:35 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (3.7ms)
+  Rendered tweeets/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 70ms (Views: 67.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 11:57:54 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (1.1ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (8.3ms)
+  Rendered tweeets/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 81ms (Views: 77.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 11:58:10 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (2.6ms)
+  Rendered tweeets/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 66ms (Views: 63.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 12:13:00 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (1126.9ms)
+  Rendered tweeets/index.html.erb within layouts/application (1129.5ms)
+Completed 500 Internal Server Error in 1136ms (ActiveRecord: 1.1ms)
+
+
+
+NameError - undefined local variable or method `tweet' for #<#<Class:0x00007f8bf6a34510>:0x00007f8bf5f53948>
+Did you mean?  tweeet
+               @tweeets:
+  app/views/tweeets/_feed.html.erb:30:in `block in _app_views_tweeets__feed_html_erb__1339984611302673755_70119551508520'
+  app/views/tweeets/_feed.html.erb:14:in `_app_views_tweeets__feed_html_erb__1339984611302673755_70119551508520'
+  app/views/tweeets/index.html.erb:4:in `_app_views_tweeets_index_html_erb__2197826699311105941_70119551861820'
+
+Started POST "/__better_errors/b3e44d64ff86506b/variables" for 127.0.0.1 at 2019-02-28 12:13:02 +0200
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 12:59:29 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (1321.5ms)
+  Rendered tweeets/index.html.erb within layouts/application (1323.7ms)
+Completed 500 Internal Server Error in 1357ms (ActiveRecord: 1.2ms)
+
+
+
+NameError - undefined local variable or method `tweet' for #<#<Class:0x00007f8bf6a34510>:0x00007f8bf4c2e278>
+Did you mean?  tweeet
+               @tweeets:
+  app/views/tweeets/_feed.html.erb:30:in `block in _app_views_tweeets__feed_html_erb__1339984611302673755_70119541991040'
+  app/views/tweeets/_feed.html.erb:14:in `_app_views_tweeets__feed_html_erb__1339984611302673755_70119541991040'
+  app/views/tweeets/index.html.erb:4:in `_app_views_tweeets_index_html_erb__2197826699311105941_70119541800080'
+
+Started POST "/__better_errors/f00d347a3acc938b/variables" for 127.0.0.1 at 2019-02-28 12:59:31 +0200
+Started POST "/__better_errors/a28f7ddf11a56667/variables" for 127.0.0.1 at 2019-02-28 13:09:58 +0200
+Started POST "/__better_errors/625dd34cab1641c6/variables" for 127.0.0.1 at 2019-02-28 13:10:01 +0200
+Started POST "/__better_errors/f00d347a3acc938b/variables" for 127.0.0.1 at 2019-02-28 13:10:03 +0200
+Started GET "/tweeets/4" for 127.0.0.1 at 2019-02-28 13:11:45 +0200
+Processing by TweeetsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTweeet Load (1.2ms)[0m  [1m[34mSELECT  "tweeets".* FROM "tweeets" WHERE "tweeets"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tweeets_controller.rb:67
+  Rendering tweeets/show.html.erb within layouts/application
+  Rendered tweeets/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 103ms (Views: 66.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 13:11:55 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (1231.8ms)
+  Rendered tweeets/index.html.erb within layouts/application (1237.9ms)
+Completed 500 Internal Server Error in 1244ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 13:11:57 +0200
+Processing by TweeetsController#index as HTML
+
+NameError - undefined local variable or method `tweet' for #<#<Class:0x00007f8bf6a34510>:0x00007f8bf7049f68>
+Did you mean?  tweeet
+               @tweeets:
+  app/views/tweeets/_feed.html.erb:30:in `block in _app_views_tweeets__feed_html_erb__1339984611302673755_70119560705260'
+  app/views/tweeets/_feed.html.erb:14:in `_app_views_tweeets__feed_html_erb__1339984611302673755_70119560705260'
+  app/views/tweeets/index.html.erb:4:in `_app_views_tweeets_index_html_erb__2197826699311105941_70119560729740'
+
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (1443.8ms)
+  Rendered tweeets/index.html.erb within layouts/application (1448.4ms)
+Completed 500 Internal Server Error in 1466ms (ActiveRecord: 1.0ms)
+
+
+
+NameError - undefined local variable or method `tweet' for #<#<Class:0x00007f8bf6a34510>:0x00007f8bf679f958>
+Did you mean?  tweeet
+               @tweeets:
+  app/views/tweeets/_feed.html.erb:30:in `block in _app_views_tweeets__feed_html_erb__1339984611302673755_70119556162520'
+  app/views/tweeets/_feed.html.erb:14:in `_app_views_tweeets__feed_html_erb__1339984611302673755_70119556162520'
+  app/views/tweeets/index.html.erb:4:in `_app_views_tweeets_index_html_erb__2197826699311105941_70119556194660'
+
+Started POST "/__better_errors/a83f92adede5bcc5/variables" for 127.0.0.1 at 2019-02-28 13:11:59 +0200
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 13:11:59 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (1665.2ms)
+  Rendered tweeets/index.html.erb within layouts/application (1667.5ms)
+Completed 500 Internal Server Error in 1730ms (ActiveRecord: 0.5ms)
+
+
+
+NameError - undefined local variable or method `tweet' for #<#<Class:0x00007f8bf6a34510>:0x00007f8bf6c72cc8>
+Did you mean?  tweeet
+               @tweeets:
+  app/views/tweeets/_feed.html.erb:30:in `block in _app_views_tweeets__feed_html_erb__1339984611302673755_70119558353880'
+  app/views/tweeets/_feed.html.erb:14:in `_app_views_tweeets__feed_html_erb__1339984611302673755_70119558353880'
+  app/views/tweeets/index.html.erb:4:in `_app_views_tweeets_index_html_erb__2197826699311105941_70119558716140'
+
+Started POST "/__better_errors/86b781a652de06a9/variables" for 127.0.0.1 at 2019-02-28 13:12:02 +0200
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 13:39:18 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (12.5ms)
+  Rendered tweeets/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 119ms (Views: 115.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/tweeets/4" for 127.0.0.1 at 2019-02-28 13:49:58 +0200
+Processing by TweeetsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTweeet Load (1.2ms)[0m  [1m[34mSELECT  "tweeets".* FROM "tweeets" WHERE "tweeets"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tweeets_controller.rb:67
+  Rendering tweeets/show.html.erb within layouts/application
+  Rendered tweeets/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 79ms (Views: 70.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 13:50:00 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (7.1ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.6ms)
+  Rendered tweeets/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 64ms (Views: 60.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tweeets/4/edit" for 127.0.0.1 at 2019-02-28 13:50:02 +0200
+Processing by TweeetsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT  "tweeets".* FROM "tweeets" WHERE "tweeets"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tweeets_controller.rb:67
+  Rendering tweeets/edit.html.erb within layouts/application
+  Rendered tweeets/_form.html.erb (19.7ms)
+  Rendered tweeets/edit.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 118ms (Views: 78.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 13:50:04 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (5.7ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.7ms)
+  Rendered tweeets/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 84ms (Views: 80.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 13:50:15 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (6.6ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.0ms)
+  Rendered tweeets/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 83ms (Views: 75.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 13:57:28 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (3.6ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (13.0ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.6ms)
+  Rendered tweeets/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 92ms (Views: 84.9ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 14:00:02 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.9ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (9.3ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.7ms)
+  Rendered tweeets/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 74ms (Views: 70.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 14:01:23 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (8.4ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.0ms)
+  Rendered tweeets/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 73ms (Views: 70.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 14:03:54 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.7ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (5.9ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.0ms)
+  Rendered tweeets/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 77ms (Views: 74.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 14:04:25 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (5.9ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.7ms)
+  Rendered tweeets/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 85ms (Views: 82.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 14:04:50 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (5.6ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.8ms)
+  Rendered tweeets/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 68ms (Views: 65.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 14:08:25 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (7.0ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.8ms)
+  Rendered tweeets/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 80ms (Views: 77.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 14:09:18 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.6ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (6.2ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.7ms)
+  Rendered tweeets/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 74ms (Views: 71.2ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/tweeets/3" for 127.0.0.1 at 2019-02-28 14:09:47 +0200
+Processing by TweeetsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TUYCEz0G89hQDj/i6u/Ucl5jdMQDpmSQOgWMRQPDYoJvpgzIuPn2KnuUg6kNA1CwSjkoXWeGuVGWPJGkMSRmMg==", "id"=>"3"}
+  [1m[36mTweeet Load (0.6ms)[0m  [1m[34mSELECT  "tweeets".* FROM "tweeets" WHERE "tweeets"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tweeets_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:57
+  [1m[36mTweeet Destroy (38.6ms)[0m  [1m[31mDELETE FROM "tweeets" WHERE "tweeets"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/tweeets_controller.rb:57
+  [1m[35m (139.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:57
+Redirected to http://localhost:3000/tweeets
+Completed 302 Found in 482ms (ActiveRecord: 178.4ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 14:09:47 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (4.0ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.9ms)
+  Rendered tweeets/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 68ms (Views: 65.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 14:09:50 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (5.0ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.5ms)
+  Rendered tweeets/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 73ms (Views: 70.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 14:10:58 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (4.8ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.1ms)
+  Rendered tweeets/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 88ms (Views: 82.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 14:12:48 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (3.9ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.7ms)
+  Rendered tweeets/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 87ms (Views: 83.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 14:13:15 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (5.7ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.1ms)
+  Rendered tweeets/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 91ms (Views: 88.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 14:15:09 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (2.0ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (12.0ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.0ms)
+  Rendered tweeets/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 84ms (Views: 79.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 14:17:19 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.6ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (5.9ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.1ms)
+  Rendered tweeets/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 78ms (Views: 74.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 14:17:30 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (10.0ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.9ms)
+  Rendered tweeets/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 90ms (Views: 86.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 14:18:42 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.9ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (5.1ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.1ms)
+  Rendered tweeets/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 5027ms (Views: 5022.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 14:18:53 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (2.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (6.8ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.8ms)
+  Rendered tweeets/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 85ms (Views: 80.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 14:20:02 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (4.4ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.8ms)
+  Rendered tweeets/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 4838ms (Views: 4834.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 14:20:17 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (4.4ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.1ms)
+  Rendered tweeets/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 83ms (Views: 80.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 14:21:31 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (6.3ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.9ms)
+  Rendered tweeets/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 129ms (Views: 124.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 14:25:38 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (0.8ms)
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (5.2ms)
+  Rendered tweeets/_who-to-follow.html.erb (3.3ms)
+  Rendered tweeets/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 89ms (Views: 85.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 14:33:38 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (1.2ms)
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (22.8ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.8ms)
+  Rendered tweeets/index.html.erb within layouts/application (37.5ms)
+Completed 200 OK in 239ms (Views: 230.8ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 14:47:26 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (4.2ms)
+  Rendered tweeets/_form.html.erb (403.5ms)
+  Rendered tweeets/_feed.html.erb (408.9ms)
+  Rendered tweeets/index.html.erb within layouts/application (417.3ms)
+Completed 500 Internal Server Error in 438ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `model_name' for nil:NilClass:
+  app/views/tweeets/_form.html.erb:1:in `_app_views_tweeets__form_html_erb__2346152315330043690_70119553805140'
+  app/views/tweeets/_feed.html.erb:9:in `_app_views_tweeets__feed_html_erb__1339984611302673755_70119553363440'
+  app/views/tweeets/index.html.erb:5:in `_app_views_tweeets_index_html_erb__2197826699311105941_70119553280920'
+
+Started POST "/__better_errors/63164b862101f843/variables" for 127.0.0.1 at 2019-02-28 14:47:27 +0200
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT  "tweeets".* FROM "tweeets" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/ivan-devops/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Tweeet Load (0.0ms)[0m  [1m[34mSELECT  "tweeets".* FROM "tweeets" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/ivan-devops/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Tweeet Load (0.1ms)[0m  [1m[34mSELECT  "tweeets".* FROM "tweeets" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/ivan-devops/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Tweeet Load (0.0ms)[0m  [1m[34mSELECT  "tweeets".* FROM "tweeets" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/ivan-devops/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Tweeet Load (0.0ms)[0m  [1m[34mSELECT  "tweeets".* FROM "tweeets" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/ivan-devops/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 14:49:23 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (0.9ms)
+  Rendered tweeets/_form.html.erb (68.5ms)
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (74.7ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.8ms)
+  Rendered tweeets/index.html.erb within layouts/application (82.6ms)
+Completed 200 OK in 170ms (Views: 139.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 14:50:09 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (1.2ms)
+  Rendered tweeets/_form.html.erb (17.7ms)
+  [1m[36mTweeet Load (0.6ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (27.6ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.8ms)
+  Rendered tweeets/index.html.erb within layouts/application (36.9ms)
+Completed 200 OK in 103ms (Views: 98.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tweeets" for 127.0.0.1 at 2019-02-28 14:51:43 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (2.3ms)
+  Rendered tweeets/_form.html.erb (24.7ms)
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (30.6ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.8ms)
+  Rendered tweeets/index.html.erb within layouts/application (40.4ms)
+Completed 200 OK in 99ms (Views: 95.7ms | ActiveRecord: 0.4ms)
+
+
