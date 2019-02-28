@@ -1812,3 +1812,137 @@ Migrating to DeviseCreateUsers (20190228131911)
   ↳ bin/rails:9
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-28 15:27:00 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ivan-devops/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (124.7ms)
+Completed 200 OK in 815ms (Views: 751.3ms | ActiveRecord: 2.3ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddFieldsToUsers (20190228140505)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (3.7ms)[0m  [1m[35mALTER TABLE "users" ADD "name" varchar[0m
+  ↳ db/migrate/20190228140505_add_fields_to_users.rb:3
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "users" ADD "username" varchar[0m
+  ↳ db/migrate/20190228140505_add_fields_to_users.rb:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190228140505_add_fields_to_users.rb:5
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_username" ON "users" ("username")[0m
+  ↳ db/migrate/20190228140505_add_fields_to_users.rb:5
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190228140505"]]
+  ↳ bin/rails:9
+  [1m[35m (108.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-28 16:28:39 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ivan-devops/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 2.3ms)
+
+
+
+SyntaxError - syntax error, unexpected ')', expecting '}'
+... label_html: { class: "label"});@output_buffer.safe_append='
+...                              ^
+/home/ivan-devops/Project/Twitter/app/views/devise/registrations/new.html.erb:32: syntax error, unexpected ':', expecting ')'
+...                       wrapper: false,
+...                              ^
+/home/ivan-devops/Project/Twitter/app/views/devise/registrations/new.html.erb:32: Can't assign to false
+...                wrapper: false,
+...                              ^
+/home/ivan-devops/Project/Twitter/app/views/devise/registrations/new.html.erb:43: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;       end 
+                ^~~
+/home/ivan-devops/Project/Twitter/app/views/devise/registrations/new.html.erb:51: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ivan-devops/Project/Twitter/app/views/devise/registrations/new.html.erb:53: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~:
+  app/views/devise/registrations/new.html.erb:13:in `'
+
+Started POST "/__better_errors/68981e89aeadef3e/variables" for 127.0.0.1 at 2019-02-28 16:28:40 +0200
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-28 16:29:18 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...                       wrapper: false,
+...                              ^
+/home/ivan-devops/Project/Twitter/app/views/devise/registrations/new.html.erb:32: Can't assign to false
+...                wrapper: false,
+...                              ^:
+  app/views/devise/registrations/new.html.erb:32:in `'
+
+Started POST "/__better_errors/7dd276d2a7a6f664/variables" for 127.0.0.1 at 2019-02-28 16:29:19 +0200
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-28 16:30:17 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (6.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (216.8ms)
+Completed 200 OK in 974ms (Views: 971.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 16:30:44 +0200
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (0.7ms)
+  Rendered tweeets/_form.html.erb (22.3ms)
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (28.9ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.0ms)
+  Rendered tweeets/index.html.erb within layouts/application (73.7ms)
+Completed 200 OK in 205ms (Views: 155.8ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/tweeets" for 127.0.0.1 at 2019-02-28 16:30:51 +0200
+Processing by TweeetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xtar+hdGThtmsNlB73dX8B2QgNWbqzg9BiF/6xx2vCN8NqUhkrlL6U0qZQoIm9MyCcrcTP+L5fyqGGIKLpG4kw==", "tweeet"=>{"tweeet"=>"1"}, "commit"=>"Create Tweeet"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-28 16:30:51 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (77.2ms)
+Completed 200 OK in 170ms (Views: 162.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-28 16:33:20 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (46.3ms)
+Completed 200 OK in 131ms (Views: 128.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-28 16:33:27 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 123ms (Views: 121.1ms | ActiveRecord: 0.0ms)
+
+
